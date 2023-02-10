@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time Sheet Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1 class="mb-3 text-center mt-2 text-secondary">Time Sheet Calculator</h1>
+     
+    <div class="container">
+        <div class="row bg-secondary">
+          <div class="col-2 fs-4 fw-semibold pb-3 pt-3 text-white">
+            Day
+          </div>
+          <div class="col-3 fs-4 fw-semibold pb-3 pt-3 text-white">
+             Starting Time
+          </div>
+          <div class="col-3 fs-4 fw-semibold pb-3 pt-3 text-white">
+            Ending Time
+          </div>
+          <div class="col-3 fs-4 fw-semibold pb-3 pt-3 text-white">
+             Break Duration ?
+          </div>
+          <div class="col-1 fs-4 fw-semibold pb-3 pt-3 text-white">
+              Total
+          </div>
+        </div>
+
+        <!-- Monday Start  -->
+        
+          <div class="row bg-white">
+            <div class="col-2 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+              Monday
+            </div>
+            <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary starting-time">
+              <div class="starting-time">
+                  <div class="starting-time-item">
+                      <input type="text" id="startHoursMonday" value="8">
+                  </div>
+                  <div class="starting-time-item">:</div>
+                  <div class="starting-time-item">
+                      <input type="text" name="minutes" id="startMinutesMonday" value="00">
+                  </div>
+                  <div class="starting-time-item">
+                      <select id="time-select" class="startTimeSelectMonday">
+                          <option value="AM">AM</option>
+                          <option value="PM">PM</option>
+                          </select>
+                          
+                  </div>
+                   
+                </div>
+                 
+            </div>
+            <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+              <div class="ending-time">
+                  <div class="ending-time-item">
+                      <input type="text" name="hours" id="endingHoursMonday" value="5">
+                  </div>
+                  <div class="ending-time-item">:</div>
+                  <div class="ending-time-item">
+                      <input type="text" name="minutes" id="endingMinutesMonday" value="00">
+                  </div>
+                  <div class="ending-time-item">
+                      <select id="time-select" class="endingTimeSelectMonday">
+                          <option value="PM">PM</option>
+                          <option value="AM">AM</option>
+                           
+                        </select>
+                          
+                  </div>
+                   
+                </div>
+            </div>
+            <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+              <div class="break-duration-time">
+                  <div class="break-duration-item">
+                      <input type="text" name="hours" id="breakHoursMonday" value="5">
+                  </div>
+                  <div class="break-duration-item">:</div>
+                  <div class="break-duration-item">
+                      <input type="text" name="minutes" id="breakMinutesMonday" value="00">
+                  </div>
+               </div>
+            </div>
+            <div class="col-1 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+                 <p id="MondayTotalWork">0.0</p>
+            </div>
+          </div>
+        
+   <!-- Monday End  -->
+  <!-- Tuesday start -->
+  <div class="row my-color">
+    <div class="col-2 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+      Tuesday
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary starting-time">
+      <div class="starting-time">
+          <div class="starting-time-item">
+              <input type="text" id="startHoursTuesday" value="8">
+          </div>
+          <div class="starting-time-item">:</div>
+          <div class="starting-time-item">
+              <input type="text" name="minutes" id="startMinutesTuesday" value="00">
+          </div>
+          <div class="starting-time-item">
+              <select id="time-select" class="startTimeSelectTuesday">
+                  <option value="AM">AM</option>
+                  <option value="PM">PM</option>
+                  </select>
+                  
+          </div>
+           
+        </div>
+         
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+      <div class="ending-time">
+          <div class="ending-time-item">
+              <input type="text" name="hours" id="endingHoursTuesday" value="5">
+          </div>
+          <div class="ending-time-item">:</div>
+          <div class="ending-time-item">
+              <input type="text" name="minutes" id="endingMinutesTuesday" value="00">
+          </div>
+          <div class="ending-time-item">
+              <select id="time-select" class="endingTimeSelectTuesday">
+                  <option value="PM">PM</option>
+                  <option value="AM">AM</option>
+                   
+                </select>
+                  
+          </div>
+           
+        </div>
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+      <div class="break-duration-time">
+          <div class="break-duration-item">
+              <input type="text" name="hours" id="breakHoursTuesday" value="5">
+          </div>
+          <div class="break-duration-item">:</div>
+          <div class="break-duration-item">
+              <input type="text" name="minutes" id="breakMinutesTuesday" value="00">
+          </div>
+       </div>
+    </div>
+    <div class="col-1 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+         <p id="TuesdayTotalWork">0.0</p>
+    </div>
+  </div>
+        <!-- Tuesday End -->
+
+       <!-- Wednesday Start -->
+
+       <div class="row bg-white">
+        <div class="col-2 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+          Wednesday
+        </div>
+        <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary starting-time">
+          <div class="starting-time">
+              <div class="starting-time-item">
+                  <input type="text" id="startHoursWednesday" value="8">
+              </div>
+              <div class="starting-time-item">:</div>
+              <div class="starting-time-item">
+                  <input type="text" name="minutes" id="startMinutesWednesday" value="00">
+              </div>
+              <div class="starting-time-item">
+                  <select id="time-select" class="startTimeSelectWednesday">
+                      <option value="AM">AM</option>
+                      <option value="PM">PM</option>
+                      </select>
+                      
+              </div>
+               
+            </div>
+             
+        </div>
+        <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+          <div class="ending-time">
+              <div class="ending-time-item">
+                  <input type="text" name="hours" id="endingHoursWednesday" value="5">
+              </div>
+              <div class="ending-time-item">:</div>
+              <div class="ending-time-item">
+                  <input type="text" name="minutes" id="endingMinutesWednesday" value="00">
+              </div>
+              <div class="ending-time-item">
+                  <select id="time-select" class="endingTimeSelectWednesday">
+                      <option value="PM">PM</option>
+                      <option value="AM">AM</option>
+                       
+                    </select>
+                      
+              </div>
+               
+            </div>
+        </div>
+        <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+          <div class="break-duration-time">
+              <div class="break-duration-item">
+                  <input type="text" name="hours" id="breakHoursWednesday" value="5">
+              </div>
+              <div class="break-duration-item">:</div>
+              <div class="break-duration-item">
+                  <input type="text" name="minutes" id="breakMinutesWednesday" value="00">
+              </div>
+           </div>
+        </div>
+        <div class="col-1 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+             <p id="WednesdayTotalWork">0.0</p>
+        </div>
+      </div>
+       <!-- Wednesday End  -->
+
+       <!-- Thursday Start-->
+       <div class="row my-color">
+        <div class="col-2 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+          Thursday
+        </div>
+        <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary starting-time">
+          <div class="starting-time">
+              <div class="starting-time-item">
+                  <input type="text" id="startHoursThursday" value="8">
+              </div>
+              <div class="starting-time-item">:</div>
+              <div class="starting-time-item">
+                  <input type="text" name="minutes" id="startMinutesThursday" value="00">
+              </div>
+              <div class="starting-time-item">
+                  <select id="time-select" class="startTimeSelectThursday">
+                      <option value="AM">AM</option>
+                      <option value="PM">PM</option>
+                      </select>
+                      
+              </div>
+               
+            </div>
+             
+        </div>
+        <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+          <div class="ending-time">
+              <div class="ending-time-item">
+                  <input type="text" name="hours" id="endingHoursThursday" value="5">
+              </div>
+              <div class="ending-time-item">:</div>
+              <div class="ending-time-item">
+                  <input type="text" name="minutes" id="endingMinutesThursday" value="00">
+              </div>
+              <div class="ending-time-item">
+                  <select id="time-select" class="endingTimeSelectThursday">
+                      <option value="PM">PM</option>
+                      <option value="AM">AM</option>
+                       
+                    </select>
+                      
+              </div>
+               
+            </div>
+        </div>
+        <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+          <div class="break-duration-time">
+              <div class="break-duration-item">
+                  <input type="text" name="hours" id="breakHoursThursday" value="5">
+              </div>
+              <div class="break-duration-item">:</div>
+              <div class="break-duration-item">
+                  <input type="text" name="minutes" id="breakMinutesThursday" value="00">
+              </div>
+           </div>
+        </div>
+        <div class="col-1 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+             <p id="ThursdayTotalWork">0.0</p>
+        </div>
+      </div>
+       <!-- Thursday End -->
+
+  <!-- Friday Start -->
+  <div class="row bg-white">
+    <div class="col-2 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+      Friday
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary starting-time">
+      <div class="starting-time">
+          <div class="starting-time-item">
+              <input type="text" id="startHoursFriday" value="8">
+          </div>
+          <div class="starting-time-item">:</div>
+          <div class="starting-time-item">
+              <input type="text" name="minutes" id="startMinutesFriday" value="00">
+          </div>
+          <div class="starting-time-item">
+              <select id="time-select" class="startTimeSelectFriday">
+                  <option value="AM">AM</option>
+                  <option value="PM">PM</option>
+                  </select>
+                  
+          </div>
+           
+        </div>
+         
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+      <div class="ending-time">
+          <div class="ending-time-item">
+              <input type="text" name="hours" id="endingHoursFriday" value="5">
+          </div>
+          <div class="ending-time-item">:</div>
+          <div class="ending-time-item">
+              <input type="text" name="minutes" id="endingMinutesFriday" value="00">
+          </div>
+          <div class="ending-time-item">
+              <select id="time-select" class="endingTimeSelectFriday">
+                  <option value="PM">PM</option>
+                  <option value="AM">AM</option>
+                   
+                </select>
+                  
+          </div>
+           
+        </div>
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+      <div class="break-duration-time">
+          <div class="break-duration-item">
+              <input type="text" name="hours" id="breakHoursFriday" value="5">
+          </div>
+          <div class="break-duration-item">:</div>
+          <div class="break-duration-item">
+              <input type="text" name="minutes" id="breakMinutesFriday" value="00">
+          </div>
+       </div>
+    </div>
+    <div class="col-1 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+         <p id="FridayTotalWork">0.0</p>
+    </div>
+  </div>
+  <!-- Friday End -->
+
+  <!-- Saturday  Start -->
+  <div class="row my-color">
+    <div class="col-2 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+      Saturday
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary starting-time">
+      <div class="starting-time">
+          <div class="starting-time-item">
+              <input type="text" id="startHoursSaturday" value="8">
+          </div>
+          <div class="starting-time-item">:</div>
+          <div class="starting-time-item">
+              <input type="text" name="minutes" id="startMinutesSaturday" value="00">
+          </div>
+          <div class="starting-time-item">
+              <select id="time-select" class="startTimeSelectSaturday">
+                  <option value="AM">AM</option>
+                  <option value="PM">PM</option>
+                  </select>
+                  
+          </div>
+           
+        </div>
+         
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+      <div class="ending-time">
+          <div class="ending-time-item">
+              <input type="text" name="hours" id="endingHoursSaturday" value="5">
+          </div>
+          <div class="ending-time-item">:</div>
+          <div class="ending-time-item">
+              <input type="text" name="minutes" id="endingMinutesSaturday" value="00">
+          </div>
+          <div class="ending-time-item">
+              <select id="time-select" class="endingTimeSelectSaturday">
+                  <option value="PM">PM</option>
+                  <option value="AM">AM</option>
+                   
+                </select>
+                  
+          </div>
+           
+        </div>
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+      <div class="break-duration-time">
+          <div class="break-duration-item">
+              <input type="text" name="hours" id="breakHoursSaturday" value="5">
+          </div>
+          <div class="break-duration-item">:</div>
+          <div class="break-duration-item">
+              <input type="text" name="minutes" id="breakMinutesSaturday" value="00">
+          </div>
+       </div>
+    </div>
+    <div class="col-1 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+         <p id="SaturdayTotalWork">0.0</p>
+    </div>
+  </div>
+  <!-- Saturday End -->
+
+  <!-- Sunday Start -->
+
+  <div class="row bg-white">
+    <div class="col-2 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+      Sunday
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary starting-time">
+      <div class="starting-time">
+          <div class="starting-time-item">
+              <input type="text" id="startHoursSunday" value="8">
+          </div>
+          <div class="starting-time-item">:</div>
+          <div class="starting-time-item">
+              <input type="text" name="minutes" id="startMinutesSunday" value="00">
+          </div>
+          <div class="starting-time-item">
+              <select id="time-select" class="startTimeSelectSunday">
+                  <option value="AM">AM</option>
+                  <option value="PM">PM</option>
+                  </select>
+                  
+          </div>
+           
+        </div>
+         
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+      <div class="ending-time">
+          <div class="ending-time-item">
+              <input type="text" name="hours" id="endingHoursSunday" value="5">
+          </div>
+          <div class="ending-time-item">:</div>
+          <div class="ending-time-item">
+              <input type="text" name="minutes" id="endingMinutesSunday" value="00">
+          </div>
+          <div class="ending-time-item">
+              <select id="time-select" class="endingTimeSelectSunday">
+                  <option value="PM">PM</option>
+                  <option value="AM">AM</option>
+                   
+                </select>
+                  
+          </div>
+           
+        </div>
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+      <div class="break-duration-time">
+          <div class="break-duration-item">
+              <input type="text" name="hours" id="breakHoursSunday" value="5">
+          </div>
+          <div class="break-duration-item">:</div>
+          <div class="break-duration-item">
+              <input type="text" name="minutes" id="breakMinutesSunday" value="00">
+          </div>
+       </div>
+    </div>
+    <div class="col-1 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+         <p id="SundayTotalWork">0.0</p>
+    </div>
+  </div>
+  <!-- Sunday End -->
+
+  <!-- total Calculator  start -->
+  <div class="row my-color ">
+    <div class="col-2 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+        <p class="codeBeautify">Code Beautify</p>
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary starting-time">
+       
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+     
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+       
+       <h2 id="total-hours">Total Hours :</h2>
+    </div>
+    <div class="col-1 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+         <p id="totalWorkingTime">00</p>
+    </div>
+   
+  </div>
+  <!-- total Calculator end  -->
+
+  <div class="row">
+    <div class="col-2 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+      <button onclick="Calculator()">CALCULATOR</button>
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary starting-time">
+      <button onclick="ClearAll()">CLEAR ALL</button>
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+     
+    </div>
+    <div class="col-3 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+       
+       
+    </div>
+    <div class="col-1 fs-5 fw-semibold pb-2 pt-3 text-secondary">
+         
+    </div>
+   
+  </div>
+ 
+
+ </div>
+    
+      
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>

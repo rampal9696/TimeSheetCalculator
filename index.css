@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+
+.ending-time,
+.starting-time,
+.break-duration-time {
+    display: flex;
+}
+
+.ending-time-item,
+.starting-time-item,
+.break-duration-item {
+    margin-right: 20px;
+}
+
+input,
+#time-select {
+
+    padding: 5px 8px 5px 8px;
+    outline: none;
+    border-style: none;
+    border: 2px solid #888;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #888;
+}
+
+input {
+    width: 60px;
+}
+
+#time-select {
+    width: 80px;
+}
+
+option {
+    border-style: none;
+    outline: none;
+}
+
+p {
+    color: #888;
+}
+
+.codeBeautify {
+    font-size: 15px;
+}
+
+#total-hours {
+    font-size: 25px;
+    color: #555;
+}
+
+.my-color {
+    background-color: #c7c7c7;
+
+}
+
+
+body {
+    padding-bottom: 200px;
+}
+
+button {
+    /* text-align: center; */
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-style: none;
+    font-weight: 500;
+    outline: none;
+
+    background-color: #0c0b0b;
+    color: #fff;
+
+}
