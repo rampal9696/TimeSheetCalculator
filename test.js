@@ -1,1 +1,1 @@
-console.log("text is added");
+console.log("test");
